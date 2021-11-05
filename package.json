@@ -1,0 +1,22 @@
+{
+  "name": "jwt_sso_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "app:watch": "nodemon --http-parser=legacy ./dist/app.js",
+    "ts:watch": "tsc --pretty --watch",
+    "clean:dist": "rm -rf ./dist/",
+    "prettier": "prettier '**/*.{js,jsx,ts,json,md}'"
+  },
+  "keywords": [],
+  "author": "Andrew Lavers <alavers@system42.net> (https://github.com/alavers)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.6"
+  }
+}

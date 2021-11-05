@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "./dist/",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es2018",
+        "sourceMap": true,
+        "inlineSources": true,
+        "allowJs": true,
+        "checkJs": false,
+        "skipLibCheck": true,
+        "lib": ["es2018", "es2019.array"],
+        "incremental": true,
+        "allowSyntheticDefaultImports": false,
+        "forceConsistentCasingInFileNames": true,
+        "listEmittedFiles": false,
+        "listFiles": false,
+        "experimentalDecorators": true,
+        "strict": true,
+        "noImplicitAny": false,
+        "plugins": [{ "name": "typescript-tslint-plugin", "alwaysShowRuleFailuresAsWarnings": false }],
+        "noUnusedLocals": true
+    },
+    "include": ["./src/**/*"],
+    "exclude": ["./node_modules/**/*"]
+}
