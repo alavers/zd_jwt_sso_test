@@ -16,6 +16,7 @@ There's no logging in here. Just fill out some user details below and this app w
     <input type="external_id" name="external_id" id="external_id" size="48" value="123" required>
   </div>
   <div>
-    <input type="submit" value="Subscribe!">
+    <input type="hidden" name="return_to" id="return_to" value="<%= return_to %>">
+    <input type="submit" value="Log in">
   </div>
 </form>
