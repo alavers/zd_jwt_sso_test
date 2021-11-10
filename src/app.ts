@@ -44,8 +44,11 @@ app.post("/sso/form", (req, res) => {
   );
 });
 
-app.use("/sso/logout", (_, res) => {
-  res.redirect(`https://${subdomain}.zendesk.com/hc/signin`);
+app.use("/sso/logout", (req, res) => {
+  res.render("logout", {
+    message: req.query.message,
+    continue_url: `https://${subdomain}.zendesk.com/hc/signin`,
+  });
 });
 
 app.listen(port, () => {
